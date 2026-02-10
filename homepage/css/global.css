@@ -1,5 +1,49 @@
 @import url(header.css);
 
+@font-face {
+  font-family: "Cinzel";
+  src: url(../fonts/Cinzel-VariableFont_wght.ttf);
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+  font-display: swap;
+  font-style: normal;
+}
+
 :root {
-    
+  --primary-color: #722f37;
+  --secondary-color: #e5e7eb;
+  --text-primary-color: #374151;
+  --text-secondary-color: #ffffff;
+  --text-weight: 400;
+  --title-weight: 700;
+}
+
+body,
+header,
+img,
+h1,
+p,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Cinzel";
+}
+
+body {
+  font-family: "Inter";
 }
