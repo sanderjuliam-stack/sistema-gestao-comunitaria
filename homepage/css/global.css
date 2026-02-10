@@ -19,7 +19,8 @@
   --secondary-color: #e5e7eb;
   --text-primary-color: #374151;
   --text-secondary-color: #ffffff;
-  --text-weight: 400;
+  --text-terciary-color: #e1b7bc;
+  --text-weight: 300;
   --title-weight: 700;
 }
 
@@ -34,16 +35,32 @@ label,
 input,
 select,
 textarea,
-button {
+button,
+ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  font-weight: var(--text-weight);
+  font-size: 16px;
+  background-color: var(--secondary-color);
 }
 
 h1 {
   font-family: "Cinzel";
 }
 
-body {
-  font-family: "Inter";
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
 }
