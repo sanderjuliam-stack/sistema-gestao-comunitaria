@@ -20,8 +20,8 @@
   font-weight: var(--title-weight);
   color: var(--title-color);
   height: 200px;
-  background: url(../img/hero-desktop.png) no-repeat;
-  background-size: auto;
+  background: url(../img/hero-mobile.png) no-repeat;
+  background-size: cover;
   background-position: center top;
 }
 
@@ -29,23 +29,77 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 140px;
-  height: 52px;
   border-radius: 16px;
   font-weight: var(--text-weight);
   font-size: 14px;
   background-color: var(--primary-color);
   color: var(--text-secondary-color);
+  padding: 4px 10px;
 }
 
 .container-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 10px 10px;
+  justify-content: space-around;
+  margin: 10px;
 }
 
 .hero p {
   font-weight: var(--text-weight);
   color: var(--text-primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    background: url(../img/hero-tablet.png) no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+  .hero-title h1 {
+    font-size: 62px;
+  }
+  .hero-title h2 {
+    font-size: 40px;
+  }
+  .container-buttons {
+    margin: 18px;
+  }
+  .button {
+    padding: 8px 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-title {
+    background: url(../img/hero-desktop.png) no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+  .hero-title h1 {
+    font-size: 64px;
+  }
+  .hero-title h2 {
+    font-size: 48px;
+  }
+  .button {
+    font-size: 20px;
+    padding: 8px 30px;
+  }
+  .container-buttons {
+    margin: 26px;
+  }
+  .hero p {
+    margin: 0 28px;
+  }
+  .button:hover {
+    background-color: var(--button-hover-color);
+    color: var(--text-hover-color);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-title {
+    background: url(../img/hero-large-desktop.png) no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
 }
