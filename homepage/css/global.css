@@ -1,4 +1,5 @@
 @import url(header.css);
+@import url(hero.css);
 
 @font-face {
   font-family: "Cinzel";
@@ -17,11 +18,14 @@
 :root {
   --primary-color: #722f37;
   --secondary-color: #e5e7eb;
+
+  --title-color: #000000;
   --text-primary-color: #374151;
   --text-secondary-color: #ffffff;
-  --text-terciary-color: #e1b7bc;
+  --text-hover-color: #e1b7bc;
+
   --text-weight: 300;
-  --title-weight: 700;
+  --title-weight: 800;
 }
 
 body,
@@ -36,10 +40,12 @@ input,
 select,
 textarea,
 button,
-ul {
+ul,
+a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -49,9 +55,9 @@ body {
   background-color: var(--secondary-color);
 }
 
-h1 {
-  font-family: "Cinzel";
-}
+/* section {
+  padding: 0, 10px;
+} */
 
 @media screen and (min-width: 768px) {
   body {
